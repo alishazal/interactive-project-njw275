@@ -73,6 +73,7 @@ if (triggerPressed) {
 }
 ```
 
+Next, in the [ReceivePosition script](!!) Unity is receiving back data from Wekinator. Right now, the [Wekinator project](!!) is set up to evaluate the data and make an estimate on one of three gestures. 
 
 ```C#
 //Get the values for comparison to gesture groups
