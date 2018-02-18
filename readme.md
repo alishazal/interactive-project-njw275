@@ -51,26 +51,26 @@ The triggerPressed boolean in the [SendPositionOnUpdate script](!!), is used to 
 GameObject headset = GameObject.Find ("[CameraRig]/Camera (eye)");
 //Debug.Log (headset);
 
-		//if user is making a gesture
-		if (triggerPressed) {
-			message.address = "/wek/inputs";
-			Vector3 distanceFromHeadset;
-			float distanceX = transform.position.x - headset.transform.position.x;
-			float distanceY = transform.position.y - headset.transform.position.y;
-			float distanceZ = transform.position.z - headset.transform.position.z;
+//if user is making a gesture
+if (triggerPressed) {
+	message.address = "/wek/inputs";
+	Vector3 distanceFromHeadset;
+	float distanceX = transform.position.x - headset.transform.position.x;
+	float distanceY = transform.position.y - headset.transform.position.y;
+	float distanceZ = transform.position.z - headset.transform.position.z;
 
-			/*
-			Here, the messages (namely: distanceX, distanceY, distanceZ)
-			are values that measure the x,y,z position of the controller
-			the script is attached to in RELATION TO the headset
-			*/
-			message.values.Add (distanceX);
-			message.values.Add (distanceY);
-			message.values.Add (distanceZ);
+	/*
+	Here, the messages (namely: distanceX, distanceY, distanceZ)
+	are values that measure the x,y,z position of the controller
+	the script is attached to in RELATION TO the headset
+	*/
+	message.values.Add (distanceX);
+	message.values.Add (distanceY);
+	message.values.Add (distanceZ);
 
-			//Send the values over OSC
-			osc.Send (message);
-		}
+	//Send the values over OSC
+	osc.Send (message);
+}
 ```
 
 
