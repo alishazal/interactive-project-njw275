@@ -1,3 +1,8 @@
+# User Testing
+
+![User testing with a wiimote to create a cube in Unity](https://github.com/artintelclass/interactive-project-njw275/blob/master/user-testing-wiimote.gif)
+
+
 # Interactive-Project
 This project is due Monday, February 19th.
 
