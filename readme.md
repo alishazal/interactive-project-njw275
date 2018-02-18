@@ -20,14 +20,30 @@ This Unity Scene is based off of [this UnityOSC example](http://thomasfredericks
 ![User testing with a wiimote where one gesture creates too many objects](https://github.com/artintelclass/interactive-project-njw275/blob/master/GIFs/too-many-cubes-usertesting.gif)
 > Here, the user uses one gesture, yet multiple objects were created. 
 
+### Adding the Trigger to get the gesture
+
+First, I edited the script from SteamVR to change a boolean in my script. The boolean will allow me to know when the trigger is pressed on the controller
+
+The **SteamVR Script** I edited is located in the SteamVR package from the Unity Asset Store:
+
+SteamVR -> Extras -> SteamVR_TrackedController.cs
+
+![Steam_VR Code to change the triggerPressed boolean](https://github.com/artintelclass/interactive-project-njw275/blob/master/GIFs/too-many-cubes-usertesting.gif)
+
+In this code, I added these lines when the triggered is pressed and when it is released, respectively: 
 
 ```C#
 gameObject.GetComponent<SendPositionOnUpdate> ().triggerPressed = true;
 GameObject.Find ("Osc").GetComponent<ReceivePosition> ().triggerPressed = true; 
 ```
 
+```C#
+gameObject.GetComponent<SendPositionOnUpdate> ().triggerPressed = false;
+GameObject.Find ("Osc").GetComponent<ReceivePosition> ().triggerPressed = false;
+```
 
-SteamVR -> Extras -> SteamVR_TrackedController.cs
+
+
 
 
 
