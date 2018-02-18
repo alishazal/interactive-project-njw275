@@ -10,6 +10,8 @@ Come up with some project call that you have been awarded. Perhaps you got award
 
 ## User Testing
 
+![Setting Trigger Bool to true in Steam_VR Script](https://github.com/artintelclass/interactive-project-njw275/blob/master/Images/TriggerFromSteamVR.png)
+
 ![User testing with a wiimote to create a cube in Unity](https://github.com/artintelclass/interactive-project-njw275/blob/master/GIFs/user-testing-wiimote.gif)
 
 Here, in early user testing, a wiimote is used to create a simple cube in Unity
