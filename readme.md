@@ -21,8 +21,10 @@ This Unity Scene is based off of [this UnityOSC example](http://thomasfredericks
 > Here, the user uses one gesture, yet multiple objects were created. 
 
 
-``` gameObject.GetComponent<SendPositionOnUpdate> ().triggerPressed = true;
-GameObject.Find ("Osc").GetComponent<ReceivePosition> ().triggerPressed = true; ```
+``` 
+gameObject.GetComponent<SendPositionOnUpdate> ().triggerPressed = true;
+GameObject.Find ("Osc").GetComponent<ReceivePosition> ().triggerPressed = true; 
+```
 
 
 SteamVR -> Extras -> SteamVR_TrackedController.cs
