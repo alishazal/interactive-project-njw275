@@ -21,7 +21,7 @@ This Unity Scene is based off of [this UnityOSC example](http://thomasfredericks
 > Here, the user uses one gesture, yet multiple objects were created. 
 
 
-``` 
+```C#
 gameObject.GetComponent<SendPositionOnUpdate> ().triggerPressed = true;
 GameObject.Find ("Osc").GetComponent<ReceivePosition> ().triggerPressed = true; 
 ```
