@@ -10,11 +10,11 @@ Come up with some project call that you have been awarded. Perhaps you got award
 
 ## User Testing
 
-![User testing with a wiimote to create a cube in Unity](https://github.com/artintelclass/interactive-project-njw275/blob/master/user-testing-wiimote.gif)
+![User testing with a wiimote to create a cube in Unity](https://github.com/artintelclass/interactive-project-njw275/blob/master/GIFs/user-testing-wiimote.gif)
 
 Here, in early user testing, a wiimote is used to create a simple cube in Unity
 
-![User testing with a wiimote where one gesture creates too many objects](https://github.com/artintelclass/interactive-project-njw275/blob/master/too-many-cubes-usertesting.gif)
+![User testing with a wiimote where one gesture creates too many objects](https://github.com/artintelclass/interactive-project-njw275/blob/master/GIFs/too-many-cubes-usertesting.gif)
 
 Here, the user uses one gesture, yet multiple objects were created. 
 
