@@ -12,7 +12,7 @@ Come up with some project call that you have been awarded. Perhaps you got award
 This Unity Scene is based off of [this UnityOSC example](http://thomasfredericks.github.io/UnityOSC/)
 
 
-### User Testing
+### User Testing Phase 1
 
 ![User testing with a wiimote to create a cube in Unity](https://github.com/artintelclass/interactive-project-njw275/blob/master/GIFs/user-testing-wiimote.gif)
 > Here, in early user testing, a wiimote is used to create a simple cube in Unity
@@ -21,7 +21,8 @@ This Unity Scene is based off of [this UnityOSC example](http://thomasfredericks
 > Here, the user uses one gesture, yet multiple objects were created. 
 
 
-
+``` gameObject.GetComponent<SendPositionOnUpdate> ().triggerPressed = true;
+GameObject.Find ("Osc").GetComponent<ReceivePosition> ().triggerPressed = true; ```
 
 
 SteamVR -> Extras -> SteamVR_TrackedController.cs
