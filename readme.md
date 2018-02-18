@@ -1,7 +1,8 @@
 
 
 # Interactive-Project
-This project is due Monday, February 19th.
+Originally due: 2/19/2018
+Author: Nicholas White
 
 ## Prompt
 Come up with some project call that you have been awarded. Perhaps you got awarded the job of coming up with a system that allows people to use gestures in their home to activate/deactivate various appliances/lights/etc. Or perhaps you got awarded the job to create a system that tracks and understands museum vistor movements in a space and triggers various sounds, visuals, and/or something else in an interactive installation. Or perhaps you were awarded a project tasked with building an interface for a new musical instrument, or maybe a game project, or.... (fill in the blank). This project could take many forms, but needs to include realtime machine learning trained with one or more sensors, and some sort of output. Be as detailed as possible about the project call, what is the setting, what the input should be, what the output should be, etc. Don't start thinking about the tech first, think about the thing you want to create first. After that, then think about what tools are needed for building the project.
@@ -45,6 +46,13 @@ GameObject.Find ("Osc").GetComponent<ReceivePosition> ().triggerPressed = false;
 The triggerPressed boolean in the [SendPositionOnUpdate script](https://github.com/artintelclass/interactive-project-njw275/blob/master/Assets/SendPositionOnUpdate.cs), is used to know when a user is making a gesture. When the trigger is pressed, distanceX, distanceY, and distanceZ are calculated, added to the OSC message, and sent to Wekinator. Below, you can see this process. 
 
 **Note:** distanceX is x position of the controller the script is attached to calculated in relation to the headset, that way no matter where the user is in 3D space, the gesture is the same. The equivalent calculations are done for distanceY and distanceZ as well. 
+
+### What are the gestures?
+While holding the trigger:
+Pull from the left side of your body across your chest to the right side of your body == instantiate a sphere
+Pull from the right side of your body straight down == instantiate a cube
+
+**Note:** the prefabs that are created by the gestures are simple prefabs I put into the assets folder. On the other hand, these prefabs can be any 
 
 ```C#
 //Find the HTC Vive Headset
