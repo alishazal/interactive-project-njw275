@@ -30,7 +30,7 @@ SteamVR -> Extras -> SteamVR_TrackedController.cs
 
 ![Steam_VR Code to change the triggerPressed boolean](https://github.com/artintelclass/interactive-project-njw275/blob/master/Images/FromSteamVR.png)
 
-In this code, I added these lines when the triggered is pressed and when it is released, respectively: 
+> Below are the lines I added when the triggered is pressed and when it is released, respectively, to the Update function shown above.
 
 ```C#
 gameObject.GetComponent<SendPositionOnUpdate> ().triggerPressed = true;
@@ -41,8 +41,6 @@ GameObject.Find ("Osc").GetComponent<ReceivePosition> ().triggerPressed = true;
 gameObject.GetComponent<SendPositionOnUpdate> ().triggerPressed = false;
 GameObject.Find ("Osc").GetComponent<ReceivePosition> ().triggerPressed = false;
 ```
-
-
 
 
 
