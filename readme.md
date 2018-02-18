@@ -2,6 +2,8 @@
 
 ![User testing with a wiimote to create a cube in Unity](https://github.com/artintelclass/interactive-project-njw275/blob/master/user-testing-wiimote.gif)
 
+![User testing with a wiimote where one gesture creates too many objects](https://github.com/artintelclass/interactive-project-njw275/blob/master/too-many-cubes-usertesting.gif)
+
 
 # Interactive-Project
 This project is due Monday, February 19th.
