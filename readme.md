@@ -42,7 +42,7 @@ gameObject.GetComponent<SendPositionOnUpdate> ().triggerPressed = false;
 GameObject.Find ("Osc").GetComponent<ReceivePosition> ().triggerPressed = false;
 ```
 
-The triggerPressed boolean in the [SendPositionOnUpdate script](!!), is used to know when a user is making a gesture. When the trigger is pressed, distanceX, distanceY, and distanceZ are calculated, added to the OSC message, and sent to Wekinator. Below, you can see this process. 
+The triggerPressed boolean in the [SendPositionOnUpdate script](https://github.com/artintelclass/interactive-project-njw275/blob/master/Assets/SendPositionOnUpdate.cs), is used to know when a user is making a gesture. When the trigger is pressed, distanceX, distanceY, and distanceZ are calculated, added to the OSC message, and sent to Wekinator. Below, you can see this process. 
 
 **Note:** distanceX is x position of the controller the script is attached to calculated in relation to the headset, that way no matter where the user is in 3D space, the gesture is the same. The equivalent calculations are done for distanceY and distanceZ as well. 
 
@@ -73,7 +73,7 @@ if (triggerPressed) {
 }
 ```
 
-Next, in the [ReceivePosition script](!!) Unity is receiving back data from Wekinator. Right now, the [Wekinator project](!!) is set up to evaluate the data and make an estimate on one of three gestures. 
+Next, in the [ReceivePosition script](https://github.com/artintelclass/interactive-project-njw275/blob/master/Assets/ReceivePosition.cs) Unity is receiving back data from Wekinator. Right now, the Wekinator project is set up to evaluate the data and make an estimate on one of three gestures. 
 
 ```C#
 //Get the values for comparison to gesture groups
