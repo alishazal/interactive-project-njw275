@@ -6,6 +6,7 @@ Here, in early user testing, a wiimote is used to create a simple cube in Unity
 
 ![User testing with a wiimote where one gesture creates too many objects](https://github.com/artintelclass/interactive-project-njw275/blob/master/too-many-cubes-usertesting.gif)
 
+Here, the user uses one gesture, yet multiple objects were created. 
 
 # Interactive-Project
 This project is due Monday, February 19th.
