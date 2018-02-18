@@ -28,7 +28,7 @@ The **SteamVR Script** I edited is located in the SteamVR package from the Unity
 
 SteamVR -> Extras -> SteamVR_TrackedController.cs
 
-![Steam_VR Code to change the triggerPressed boolean](https://github.com/artintelclass/interactive-project-njw275/blob/master/GIFs/too-many-cubes-usertesting.gif)
+![Steam_VR Code to change the triggerPressed boolean](https://github.com/artintelclass/interactive-project-njw275/blob/master/Images/FromSteamVR.png)
 
 In this code, I added these lines when the triggered is pressed and when it is released, respectively: 
 
