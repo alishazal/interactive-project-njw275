@@ -7,8 +7,12 @@ This project is due Monday, February 19th.
 Come up with some project call that you have been awarded. Perhaps you got awarded the job of coming up with a system that allows people to use gestures in their home to activate/deactivate various appliances/lights/etc. Or perhaps you got awarded the job to create a system that tracks and understands museum vistor movements in a space and triggers various sounds, visuals, and/or something else in an interactive installation. Or perhaps you were awarded a project tasked with building an interface for a new musical instrument, or maybe a game project, or.... (fill in the blank). This project could take many forms, but needs to include realtime machine learning trained with one or more sensors, and some sort of output. Be as detailed as possible about the project call, what is the setting, what the input should be, what the output should be, etc. Don't start thinking about the tech first, think about the thing you want to create first. After that, then think about what tools are needed for building the project.
 
 
+## The Process
 
-## User Testing
+This Unity Scene is based off of [this UnityOSC example](http://thomasfredericks.github.io/UnityOSC/)
+
+
+### User Testing
 
 ![User testing with a wiimote to create a cube in Unity](https://github.com/artintelclass/interactive-project-njw275/blob/master/GIFs/user-testing-wiimote.gif)
 > Here, in early user testing, a wiimote is used to create a simple cube in Unity
