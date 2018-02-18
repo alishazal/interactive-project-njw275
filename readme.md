@@ -73,7 +73,7 @@ if (triggerPressed) {
 }
 ```
 
-Next, in the [ReceivePosition script](https://github.com/artintelclass/interactive-project-njw275/blob/master/Assets/ReceivePosition.cs) Unity is receiving back data from Wekinator. Right now, the Wekinator project is set up to evaluate the data and make an estimate on one of three gestures. 
+Next, in the [ReceivePosition script](https://github.com/artintelclass/interactive-project-njw275/blob/master/Assets/ReceivePosition.cs) Unity is receiving back data from Wekinator. Right now, the Wekinator project is set up to evaluate the data and make an estimate on one of three gestures. I put the float values that are retrieved from Wekinator into an array and sorted the array. That way, the first value (inputs[0]) will be the gesture Wekinator thinks is a match. Before setting one of the gestures to true, I set them all to false. This step is crutial as it makes sure only one object is made.
 
 ```C#
 //Get the values for comparison to gesture groups
@@ -94,6 +94,56 @@ gesture2Triggered = false;
 gesture3Triggered = false;
 ```
 
+After setting all the triggers to false, we check which gesture is a match and set that trigger to true:
+
+```C#
+if (triggerPressed) {
+	//If gesture1 is the smallest value
+	if (inputs [0] == gesture1) {
+	     gesture1Triggered = true;
+	}
+	//If gesture2 is the smallest value
+	else if (inputs [0] == gesture2) {
+		gesture2Triggered = true;
+	}
+	//If gesture3 is the smallest value [not used]
+	else if (inputs [0] == gesture3) {
+		gesture3Triggered = true;
+	}
+}
+```
+
+Finally, in the Update() function in the ReceivePosition script when triggeredPressed is false (aka the user has stopped making a gesture) we check to see which gesture trigger was set to true. Upon finding which gesture was made, a prefab is instantiated. The location of the prefab is based upon the location of the left controller. So, the gesture is done with the right controller and the prefab is then made wherever the left controller is located at the time the gesture ends (seen below).
+
+```
+//The left controller
+GameObject obj_location  = GameObject.Find ("Controller (left)");
+
+//If the user is done with their gesture
+if (!triggerPressed) {
+
+	//If Wekinator identified the gesture as "Gesture 1"
+	if (gesture1Triggered) {
+
+	/* 1. Create a cube prefab at the location of the left controller
+	2. Set all gesture triggers to false
+	3. Log out where the cube was placed (for user's to create one outside of "play" mode)
+	*/
+	Instantiate (cubePrefab, new Vector3(obj_location.transform.position.x,obj_location.transform.position.y,obj_location.transform.position.z), Quaternion.identity);
+	gesture1Triggered = false;
+	gesture2Triggered = false;
+	Debug.Log ("*** New cube prefab made at location x: " + obj_location.transform.position.x + " y: " + obj_location.transform.position.y + " z: " + obj_location.transform.position.z + " ***");
+
+}
+```
+
+After ending the current session in Unity, the objects made will disappear. I added debug log statements to accomdate for this fact. Now, when an object is made, a log statement will print out what prefab was made and its exact location. 
+
+## Next Steps
+
+In future iterations, I would like to take the log statements and make them into lines written into a file. After that, I could add a UI button in the VR space that, when clicked, would read the file and create objects based on the information in the file. That way, users could put objects they previously made into the scene they are currently working in. 
+
+Another step is to add more gestures, right now only two are supported but there could be many more added.
 
 ## Expectations
 This project is one of the 4 major projects due during the semester and should be much more developed and polished than the weekly exercises. Having said that, it doesn't have to be an enterprise solution, it can certainly be at a proof of concept stage. As mentioned above, you have to use some sort of machine learning as a processing step between your input and your ouput. However, that doesn't have to be limited to Wekinator strictly. You are free to use other platforms if you prefer. If you have questions about what I will consider as "Machine Learning", please ask. 
@@ -102,14 +152,7 @@ The documentation for this project should be more much detailed as well. Take vi
 
 Push all code and assets needed to run your project to your repo. You should also include detailed instructions on how to set up and operate your project.
 
-## Deadlines
-* Idea Proposal - Due Feb. 5th
-* Working Prototype - Due Feb. 14th
-* ***Finished Version - Due Feb. 19th*** 
 
-## Grading Rubric
-* 20% Idea Proposal - Due Feb. 5th
-* 20% Working Prototype - Due Feb. 14th
-* 20% Creativity
-* 20% Clear Interaction - it's very clear to a user what they are doing, and how they're doing it
-* 20% Consistent - the system works consistently
+
+
+
