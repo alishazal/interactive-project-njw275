@@ -74,6 +74,25 @@ GameObject headset = GameObject.Find ("[CameraRig]/Camera (eye)");
 ```
 
 
+```C#
+//Get the values for comparison to gesture groups
+
+float gesture1 = message.GetFloat(0); //square
+float gesture2 = message.GetFloat(1); //circle
+float gesture3 = message.GetFloat(2);
+
+//Put the values in an array and sort them
+//The value closest to 0 is what Wekinator believes is the gesture
+// (so compare to inputs[0] [the smallest of the sorted values])
+float[] inputs = {gesture1,gesture2,gesture3};
+Array.Sort (inputs);
+
+//Set them all to false first -- to make sure you dont make multiple objects at the same time
+gesture1Triggered = false;
+gesture2Triggered = false;
+gesture3Triggered = false;
+```
+
 
 ## Expectations
 This project is one of the 4 major projects due during the semester and should be much more developed and polished than the weekly exercises. Having said that, it doesn't have to be an enterprise solution, it can certainly be at a proof of concept stage. As mentioned above, you have to use some sort of machine learning as a processing step between your input and your ouput. However, that doesn't have to be limited to Wekinator strictly. You are free to use other platforms if you prefer. If you have questions about what I will consider as "Machine Learning", please ask. 
