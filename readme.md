@@ -158,7 +158,7 @@ After ending the current session in Unity, the objects made will disappear. I ad
 ![user testing phase 2 - making a sphere on the HTC Vive](https://github.com/artintelclass/interactive-project-njw275/blob/master/GIFs/user-testing2-spheres.gif)  
 >User testing on the HTC Vive - making a sphere
 
-On the HTC Vive, user testing went well. The users were able to recreate the gestures and make the simple shapes. Although, through testing it was found that at a rapid speed, the model wasnt trained enough so it had trouble with quick gestures. To account for this, I continued to train the model, adding more quick, short gestures to the training set. 
+On the HTC Vive, user testing went well. The users were able to recreate the gestures and make the simple shapes. Although, through testing it was found that the model wasnt trained enough and had trouble with quick gestures. To account for this, I continued to train the model, adding more quick, short gestures to the training set. 
 
 ## Next Steps
 
