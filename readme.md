@@ -1,8 +1,7 @@
 
 
-# Interactive-Project
+# Interactive Project
 Originally due: 2/19/2018
-
 Author: Nicholas White
 
 ## Prompt
@@ -151,19 +150,20 @@ if (!triggerPressed) {
 
 After ending the current session in Unity, the objects made will disappear. I added debug log statements to accomdate for this fact. Now, when an object is made, a log statement will print out what prefab was made and its exact location. 
 
+### User Testing Phase 2
+
+![user testing phase 2 - making a cube on the HTC Vive](https://github.com/artintelclass/interactive-project-njw275/blob/master/GIFs/user-testing2-cubes.gif)
+>User testing on the HTC Vive - making a cube
+![user testing phase 2 - making a sphere on the HTC Vive](https://github.com/artintelclass/interactive-project-njw275/blob/master/GIFs/user-testing2-spheres.gif)
+>User testing on the HTC Vive - making a sphere
+
+On the HTC Vive, user testing went well. The users were able to recreate the gestures and make the simple shapes. Although, through testing it was found that at a rapid speed, the model wasnt trained enough so it had trouble with quick gestures. To account for this, I continued to train the model, adding more quick, short gestures to the training set. 
+
 ## Next Steps
 
 In future iterations, I would like to take the log statements and make them into lines written into a file. After that, I could add a UI button in the VR space that, when clicked, would read the file and create objects based on the information in the file. That way, users could put objects they previously made into the scene they are currently working in. 
 
 Another step is to add more gestures, right now only two are supported but there could be many more added.
-
-## Expectations
-This project is one of the 4 major projects due during the semester and should be much more developed and polished than the weekly exercises. Having said that, it doesn't have to be an enterprise solution, it can certainly be at a proof of concept stage. As mentioned above, you have to use some sort of machine learning as a processing step between your input and your ouput. However, that doesn't have to be limited to Wekinator strictly. You are free to use other platforms if you prefer. If you have questions about what I will consider as "Machine Learning", please ask. 
-
-The documentation for this project should be more much detailed as well. Take videos/pictures every step of development, so you can tell a story later. You're documentation should include whatever other informative information you can provide as well, like sketches, text, diagrams, etc. We will do user testing in class. Your documentation should address your user testing feedback. You don't have to accept all user testing feedback, but you should explain why you did not. Your original proposal should be included in your documentation as well.
-
-Push all code and assets needed to run your project to your repo. You should also include detailed instructions on how to set up and operate your project.
-
 
 
 
