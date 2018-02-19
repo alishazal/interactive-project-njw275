@@ -148,7 +148,7 @@ if (!triggerPressed) {
 }
 ```
 
-After ending the current session in Unity, the objects made will disappear. I added debug log statements to accomdate for this fact. Now, when an object is made, a log statement will print out what prefab was made and its exact location. 
+After ending the current session in Unity, the objects made will disappear. I added debug log statements to accommodate for this fact. Now, when an object is made, a log statement will print out what prefab was made and its exact location. 
 
 ### User Testing Phase 2
 
