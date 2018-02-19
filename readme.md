@@ -53,9 +53,10 @@ While holding the trigger:
 Pull from the left side of your body across your chest to the right side of your body == instantiate a sphere
 Pull from the right side of your body straight down == instantiate a cube
 
-**Note:** the prefabs that are created by the gestures are simple prefabs I put into the assets folder. On the other hand, these prefabs can be any 
+**Note:** the prefabs that are created by the gestures are simple prefabs I put into the assets folder. On the other hand, these prefabs can be anything created by the user in the assets folder. 
 
-![]()
+![Showing how to change the prefabs made on a gesture](https://github.com/artintelclass/interactive-project-njw275/blob/master/Images/prefabs.png)
+>Take a prefab from your Assets folder and add it to the Receive Position script on the OSC empty game object
 
 ```C#
 //Find the HTC Vive Headset
