@@ -1,0 +1,14 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\ReceivePosition.cs">
+    <Files>
+      <File FileName="Assets\SendPositionOnUpdate.cs" Line="10" Column="17" />
+      <File FileName="Assets\SteamVR\Extras\SteamVR_TrackedController.cs" Line="154" Column="57" />
+      <File FileName="Assets\ReceivePosition.cs" Line="39" Column="20" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
