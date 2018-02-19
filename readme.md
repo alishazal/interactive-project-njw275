@@ -11,7 +11,7 @@ Come up with some project call that you have been awarded. Perhaps you got award
 
 ## The Process
 
-This Unity Scene is based off of [this UnityOSC example](http://thomasfredericks.github.io/UnityOSC/)
+This Unity Scene is built on top of [this UnityOSC example](http://thomasfredericks.github.io/UnityOSC/)
 
 
 ### User Testing Phase 1
