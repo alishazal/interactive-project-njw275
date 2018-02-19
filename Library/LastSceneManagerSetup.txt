@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/OSC Unity Example.unity
+  isLoaded: 1
+  isActive: 1
