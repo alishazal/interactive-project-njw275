@@ -55,6 +55,8 @@ Pull from the right side of your body straight down == instantiate a cube
 
 **Note:** the prefabs that are created by the gestures are simple prefabs I put into the assets folder. On the other hand, these prefabs can be any 
 
+![]()
+
 ```C#
 //Find the HTC Vive Headset
 GameObject headset = GameObject.Find ("[CameraRig]/Camera (eye)");
