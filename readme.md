@@ -46,7 +46,7 @@ GameObject.Find ("Osc").GetComponent<ReceivePosition> ().triggerPressed = false;
 
 The triggerPressed boolean in the [SendPositionOnUpdate script](https://github.com/artintelclass/interactive-project-njw275/blob/master/Assets/SendPositionOnUpdate.cs), is used to know when a user is making a gesture. When the trigger is pressed, distanceX, distanceY, and distanceZ are calculated, added to the OSC message, and sent to Wekinator. Below, you can see this process. 
 
-**Note:** distanceX is x position of the controller the script is attached to calculated in relation to the headset, that way no matter where the user is in 3D space, the gesture is the same. The equivalent calculations are done for distanceY and distanceZ as well. 
+**Note:** distanceX is the x position of the controller the script is attached to calculated in relation to the headset, that way no matter where the user is in 3D space, the gesture is the same. The equivalent calculations are done for distanceY and distanceZ as well. 
 
 ```C#
 //Find the HTC Vive Headset
