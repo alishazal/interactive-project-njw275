@@ -1,8 +1,7 @@
 
 
 # Interactive Project
-Originally due: 2/19/2018
-
+Originally due: 2/19/2018  
 Author: Nicholas White
 
 ## Prompt
@@ -76,8 +75,8 @@ if (triggerPressed) {
 ```
 
 ### What are the gestures?
-While holding the trigger:
-Pull from the left side of your body across your chest to the right side of your body == instantiate a sphere
+While holding the trigger:  
+Pull from the left side of your body across your chest to the right side of your body == instantiate a sphere  
 Pull from the right side of your body straight down == instantiate a cube
 
 **Note:** the prefabs that are created by the gestures are simple prefabs I put into the assets folder. On the other hand, these prefabs can be anything created by the user in the assets folder. 
