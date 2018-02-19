@@ -84,7 +84,7 @@ Pull from the right side of your body straight down == instantiate a cube
 ![Showing how to change the prefabs made on a gesture](https://github.com/artintelclass/interactive-project-njw275/blob/master/Images/prefabs.png)
 >Take a prefab from your Assets folder and add it to the Receive Position script on the OSC empty game object
 
-Next, in the [ReceivePosition script](https://github.com/artintelclass/interactive-project-njw275/blob/master/Assets/ReceivePosition.cs) Unity is receiving back data from Wekinator. Right now, the Wekinator project is set up to evaluate the data and make an estimate on one of three gestures. I put the float values that are retrieved from Wekinator into an array and sorted the array. That way, the first value (inputs[0]) will be the gesture Wekinator thinks is a match. Before setting one of the gestures to true, I set them all to false. This step is crutial as it makes sure only one object is made.
+Next, in the [ReceivePosition script](https://github.com/artintelclass/interactive-project-njw275/blob/master/Assets/ReceivePosition.cs) Unity is receiving data back from Wekinator. Right now, the Wekinator project is set up to evaluate the data and make an estimate on one of three gestures. I put the float values that are retrieved from Wekinator into an array and sorted the array. That way, the first value (inputs[0]) will be the gesture Wekinator thinks is a match. Before setting one of the gestures to true, I set them all to false. This step is crutial as it makes sure only one object is made.
 
 ```C#
 //Get the values for comparison to gesture groups
