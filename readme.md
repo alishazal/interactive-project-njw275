@@ -2,6 +2,7 @@
 
 # Interactive Project
 Originally due: 2/19/2018
+
 Author: Nicholas White
 
 ## Prompt
